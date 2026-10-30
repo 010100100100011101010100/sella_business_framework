@@ -1,0 +1,5 @@
+# Local browser profiles and generated files stay out of the public repository.
+.DS_Store
+__pycache__/
+*.pyc
+chrome_user_data/

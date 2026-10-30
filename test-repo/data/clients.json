@@ -1,0 +1,16 @@
+[
+  {
+    "id": "c_jee_pilot_01",
+    "name": "Beta Test Cohort (Kota JEE Aspirants)",
+    "prospect_id": "p_0001",
+    "won_at": "2026-09-05",
+    "source": "telegram_jee_community",
+    "offer": "free_sample_chapter",
+    "mrr_usd": 0,
+    "status": "active",
+    "churned_at": null,
+    "churn_reason": null,
+    "dpa_signed": true,
+    "data_delete_due": "2026-10-05"
+  }
+]

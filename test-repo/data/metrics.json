@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-09-05T12:50:00Z",
+  "window_days": 30,
+  "evidence": { "sent": 3, "replied": 1, "calls_booked": 0, "won": 0 },
+  "rates": { "reply_rate": 0.333, "bounce_rate": 0.000, "optout_rate": 0.000 },
+  "money": {
+    "revenue_invoiced_usd": 0.00,
+    "revenue_received_usd": 0.00,
+    "cogs_usd": 0.00,
+    "gross_margin": 1.000,
+    "gross_margin_model": 0.950
+  },
+  "concentration": { "largest_client_pct": 0.00, "ceiling": 0.40, "breach": false },
+  "quality": { "trigger_tier_ab_pct": 1.00, "sourced_rows_pct": 1.0 },
+  "blocked": { "open_items": 1, "oldest_days": 0 }
+}

@@ -1,0 +1,296 @@
+/* ==========================================================================
+   JEE Main & Advanced Classical Mechanics & Rotational Dynamics Master Handbook
+   Publication-Grade Print Stylesheet Engine (@media print)
+   Converts Web Reader into a Crisp, 50-Page Archival Physical Book
+   ========================================================================== */
+
+@page {
+  size: A4 portrait;
+  margin: 18mm 15mm 20mm 15mm;
+
+  /* Running Header (Top Center) */
+  @top-center {
+    content: "JEE Main & Advanced Classical Mechanics & Rotational Dynamics Master Handbook";
+    font-family: "Charter", "Merriweather", serif;
+    font-size: 8pt;
+    color: #64748b;
+    border-bottom: 0.5pt solid #cbd5e1;
+    padding-bottom: 4pt;
+  }
+
+  /* Running Footer (Chapter & Dynamic Page Counter) */
+  @bottom-left {
+    content: "Chapter " counter(chapter);
+    font-family: "Inter", -apple-system, sans-serif;
+    font-size: 8pt;
+    color: #64748b;
+  }
+
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+    font-family: "Inter", -apple-system, sans-serif;
+    font-size: 8pt;
+    font-weight: 600;
+    color: #0f172a;
+  }
+}
+
+@media print {
+  /* High-Contrast Print Ink Variables */
+  :root {
+    --bg-paper: #ffffff !important;
+    --bg-card: #f8fafc !important;
+    --ink-primary: #000000 !important;
+    --ink-secondary: #334155 !important;
+    --ink-headings: #000000 !important;
+    --border-subtle: #cbd5e1 !important;
+    --border-strong: #94a3b8 !important;
+  }
+
+  /* Global Body Print Typography */
+  body, body.handbook-body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: "Charter", "Merriweather", "Georgia", serif !important;
+    font-size: 10pt !important;
+    line-height: 1.55 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Hide Interactive Web Chrome */
+  #reading-progress-bar,
+  #progress-bar,
+  .mobile-header,
+  #sidebar,
+  .book-sidebar,
+  .sidebar-backdrop,
+  .sidebar-toggle,
+  .sidebar-search,
+  .badge-edition,
+  .controls-bar,
+  .sidebar-footer,
+  .back-to-top,
+  button,
+  .no-print {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Full Width Reading Column */
+  .book-shell, .book-wrapper {
+    display: block !important;
+    min-height: auto !important;
+  }
+
+  .book-content, main.book-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Chapter Breaks & Counters */
+  .chapter,
+  .handbook-chapter,
+  .chapter-container {
+    page-break-before: always !important;
+    break-before: page !important;
+    counter-increment: chapter;
+  }
+
+  /* Exclude First Chapter / Cover from Unnecessary Blank Page Break */
+  #cover,
+  .book-cover,
+  .chapter:first-of-type,
+  .handbook-chapter:first-of-type,
+  section.chapter-container:first-of-type {
+    page-break-before: avoid !important;
+    break-before: avoid !important;
+  }
+
+  /* Heading Formatting & Page Break Safety */
+  h1 {
+    font-size: 18pt !important;
+    margin-top: 0 !important;
+    padding-top: 8pt !important;
+    border-bottom: 1.5pt solid #000000 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  h2 {
+    font-size: 13.5pt !important;
+    margin-top: 14pt !important;
+    border-bottom: 0.75pt solid #64748b !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  h3 {
+    font-size: 11.5pt !important;
+    margin-top: 12pt !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  h4 {
+    font-size: 10.5pt !important;
+    margin-top: 10pt !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Paragraphs & Strict Orphan / Widow Suppression */
+  p, li {
+    orphans: 3 !important;
+    widows: 3 !important;
+  }
+
+  /* Non-Breaking KaTeX Mathematical Equations */
+  .katex-display {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin: 8pt 0 !important;
+    padding: 4pt 0 !important;
+    overflow: visible !important;
+  }
+
+  .katex {
+    font-size: 1.05em !important;
+  }
+
+  /* Non-Breaking Callout Cards, Traps & PYQs */
+  .card-box,
+  .card-callout,
+  .callout,
+  .trap-card,
+  .card-trap,
+  .callout-trap,
+  .tip-card,
+  .card-tip,
+  .callout-tip,
+  .pyq-box,
+  .card-pyq,
+  .challenge-box,
+  .card-challenge,
+  table,
+  figure,
+  .diagram-figure,
+  .diagram-svg,
+  svg.physics-diagram {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+  }
+
+  .card-box,
+  .card-callout {
+    border: 1pt solid #cbd5e1 !important;
+    border-left: 3.5pt solid #000000 !important;
+    background-color: #f8fafc !important;
+    padding: 8pt 10pt !important;
+    margin: 10pt 0 !important;
+  }
+
+  .trap-card,
+  .card-trap,
+  .callout-trap {
+    border: 1pt solid #fca5a5 !important;
+    border-left: 4pt solid #dc2626 !important;
+    background-color: #fef2f2 !important;
+  }
+
+  .tip-card,
+  .card-tip,
+  .callout-tip {
+    border: 1pt solid #a7f3d0 !important;
+    border-left: 4pt solid #059669 !important;
+    background-color: #ecfdf5 !important;
+  }
+
+  .pyq-box,
+  .card-pyq {
+    border: 1pt solid #fde68a !important;
+    border-left: 4pt solid #d97706 !important;
+    background-color: #fffbeb !important;
+  }
+
+  .challenge-box,
+  .card-challenge {
+    border: 1pt solid #ddd6fe !important;
+    border-left: 4pt solid #7c3aed !important;
+    background-color: #f5f3ff !important;
+  }
+
+  /* Force Open All Collapsible Analytical Solutions */
+  details.challenge-details,
+  details.solution-details,
+  details.derivation-fold,
+  details {
+    display: block !important;
+    border: 0.5pt solid #cbd5e1 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  details > summary {
+    font-weight: 700 !important;
+    border-bottom: 0.5pt solid #cbd5e1 !important;
+    margin-bottom: 6pt !important;
+  }
+
+  details > .solution-content {
+    display: block !important;
+  }
+
+  /* Tables: Crisp Borders and Repeated Headers Across Pages */
+  .table-container {
+    overflow: visible !important;
+    box-shadow: none !important;
+    border: 0.5pt solid #94a3b8 !important;
+    margin: 10pt 0 !important;
+  }
+
+  table, table.formula-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 8.5pt !important;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  tr {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  th, td {
+    border: 0.5pt solid #94a3b8 !important;
+    padding: 4pt 6pt !important;
+    text-align: left !important;
+  }
+
+  th {
+    background-color: #f1f5f9 !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+  }
+
+  /* High-Resolution Vector SVG Print Scaling */
+  svg, .diagram-svg, svg.physics-diagram {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .book-footer {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+}

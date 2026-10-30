@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ct_0001",
+    "published_at": "2026-09-05",
+    "channel": "reddit",
+    "kind": "guide",
+    "title": "The Top 10 Forensic Negative-Marking Traps in JEE Advanced Rotational Dynamics (With Mathematical Autopsies)",
+    "url": "https://reddit.com/r/JEENEETards/comments/mechanics_trap_guide",
+    "for_client_id": null,
+    "approved_by": "human:operator"
+  },
+  {
+    "id": "ct_0002",
+    "published_at": "2026-09-05",
+    "channel": "telegram",
+    "kind": "sample_pdf",
+    "title": "Chapter 01: Vectors, Calculus & Advanced 2D Kinematics (Full High-Yield PDF Sample)",
+    "url": "https://t.me/jee_physics_vault/sample_ch1.pdf",
+    "for_client_id": null,
+    "approved_by": "human:operator"
+  }
+]

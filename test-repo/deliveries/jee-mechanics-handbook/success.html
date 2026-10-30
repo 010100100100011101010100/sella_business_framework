@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful · JEE Classical Mechanics Master Handbook</title>
+  <meta name="description" content="Your order is confirmed. Access your complete JEE Classical Mechanics & Rotational Dynamics Master Handbook and Problem Vault.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .success-container {
+      max-width: 840px;
+      margin: 3rem auto 5rem;
+      padding: 0 1.5rem;
+    }
+    .success-hero {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .success-icon-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #ecfdf5;
+      border: 2px solid #a7f3d0;
+      color: #059669;
+      margin-bottom: 1.5rem;
+    }
+    .order-tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: #059669;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    .success-title {
+      font-family: var(--font-editorial);
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--ink-headings);
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    .success-subtitle {
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      color: var(--text-body);
+      max-width: 640px;
+      margin: 0 auto 1.75rem;
+      line-height: 1.6;
+    }
+    
+    /* Access Key Highlight Card */
+    .access-key-card {
+      background: #fbf8ee;
+      border: 2px solid #d5c7aa;
+      border-radius: 10px;
+      padding: 1.5rem 2rem;
+      margin: 1.5rem auto 2rem;
+      max-width: 640px;
+      text-align: center;
+    }
+    .key-card-label {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #78350f;
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+    }
+    .key-display-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+    .key-token {
+      font-family: var(--font-mono);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: 0.08em;
+      background: #ffffff;
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      border: 1px solid #d5c7aa;
+      user-select: all;
+    }
+    .copy-key-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 0.55rem 1rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .copy-key-btn:hover {
+      background: #1e293b;
+    }
+    .key-device-note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-top: 0.5rem;
+    }
+    
+    .action-button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .btn-primary-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #0f172a;
+      color: #ffffff !important;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+    }
+    .btn-primary-action:hover {
+      background: #1e293b;
+      transform: translateY(-1px);
+    }
+    .btn-secondary-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--bg-card);
+      color: var(--text-main) !important;
+      font-family: var(--font-sans);
+      font-size: 0.98rem;
+      font-weight: 600;
+      padding: 0.85rem 1.6rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-secondary-action:hover {
+      background: var(--bg-card-hover);
+      transform: translateY(-1px);
+    }
+    .receipt-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-size: 0.88rem;
+    }
+    .meta-item-label {
+      color: var(--text-muted);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+    }
+    .meta-item-val {
+      font-family: var(--font-mono);
+      color: var(--ink-headings);
+      font-weight: 600;
+      font-size: 0.85rem;
+      word-break: break-all;
+    }
+    .access-manifest-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.25rem;
+      margin-top: 2rem;
+    }
+    .manifest-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .manifest-title {
+      font-family: var(--font-editorial);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--ink-headings);
+      margin: 0;
+    }
+    .chapter-access-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .chapter-access-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(232, 222, 200, 0.45);
+      font-size: 0.92rem;
+    }
+    .chapter-access-item:last-child {
+      border-bottom: none;
+    }
+    .chapter-name {
+      font-family: var(--font-sans);
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .chapter-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #059669;
+      background: #ecfdf5;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #a7f3d0;
+    }
+    .guarantee-note {
+      margin-top: 2rem;
+      padding: 1.25rem 1.5rem;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+    }
+    .guarantee-note svg {
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+      color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="topbar-header">
+    <div class="topbar-inner">
+      <a href="index.html" class="topbar-brand" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-family: var(--font-editorial); font-size: 1.15rem; font-weight: 700; color: var(--ink-headings);">
+          Classical Mechanics Master Handbook
+        </span>
+        <span class="badge" style="background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; font-size: 0.72rem; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600;">
+          PAYMENT VERIFIED
+        </span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a id="return-link" href="index.html" class="cta-secondary-btn" style="padding: 0.4rem 0.9rem; font-size: 0.84rem; text-decoration: none; border-radius: 6px;">
+          Return to Reader
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="success-container">
+    
+    <!-- Hero Purchase Confirmation -->
+    <div class="success-hero">
+      <div class="success-icon-badge">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+      </div>
+
+      <div class="order-tag">PAYMENT CONFIRMED · LIFETIME ACCESS UNLOCKED</div>
+      <h1 class="success-title">Your Master Access is Activated</h1>
+      <p class="success-subtitle">
+        Your payment has cleared successfully via Dodo Payments. Your browser is now authorized for all 6 chapters, 60 negative-marking trap alerts, and the complete 48-problem vault.
+      </p>
+
+      <!-- Personal Access Key Card -->
+      <div class="access-key-card">
+        <div class="key-card-label">Your Personal Multi-Device Access Key</div>
+        <div class="key-display-row">
+          <span class="key-token" id="license-key-text">GENERATING...</span>
+          <button class="copy-key-btn" id="copy-btn" onclick="copyAccessKey()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span id="copy-btn-text">Copy Key</span>
+          </button>
+        </div>
+        <p class="key-device-note">
+          Save this key! You can paste this Access Key or your Dodo Payment ID (<code id="ref-payment-id">loading...</code>) on your smartphone, tablet, or secondary computer to unlock full access anytime without paying again.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-button-group">
+        <a id="primary-reader-btn" href="index.html" class="btn-primary-action">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+          </svg>
+          Open Unlocked Master Reader &rarr;
+        </a>
+
+        <button onclick="window.print()" class="btn-secondary-action" style="cursor: pointer;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Print / Save PDF (A4 Edition)
+        </button>
+      </div>
+
+      <!-- Transaction Verification Metadata -->
+      <div class="receipt-meta-grid">
+        <div>
+          <div class="meta-item-label">Payment ID</div>
+          <div class="meta-item-val" id="meta-payment-id">Confirmed</div>
+        </div>
+        <div>
+          <div class="meta-item-label">Payment Processor</div>
+          <div class="meta-item-val">Dodo Payments (MoR)</div>
+        </div>
+        <div>
+          <div class="meta-item-label">License Type</div>
+          <div class="meta-item-val">Commercial · Personal Lifetime</div>
+        </div>
+        <div>
+          <div class="meta-item-label">Access State</div>
+          <div class="meta-item-val" style="color: #059669;">FULL ACCESS UNLOCKED</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Curriculum Access Manifest -->
+    <div class="access-manifest-panel">
+      <div class="manifest-header">
+        <h2 class="manifest-title">Unlocked Curriculum &amp; Problem Vault</h2>
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">6 Modules · 60 Traps · 48 Problems</span>
+      </div>
+
+      <ul class="chapter-access-list">
+        <li class="chapter-access-item">
+          <div class="chapter-name">
+            <span class="chapter-tag">CH 01</span>
+            <span>Vectors, Calculus &amp; Advanced 2D Kinematics</span>
+          </div>
+          <a class="chapter-link" href="index.html#ch1" style="color: var(--accent-primary); font-size: 0.88rem; text-decoration: none; font-weight: 600;">Read Chapter &rarr;</a>
+        </li>
+        <li class="chapter-access-item">
+          <div class="chapter-name">
+            <span class="chapter-tag">CH 02</span>
+            <span>Newton's Laws &amp; Complex Friction Dynamics</span>
+          </div>
+          <a class="chapter-link" href="index.html#ch2" style="color: var(--accent-primary); font-size: 0.88rem; text-decoration: none; font-weight: 600;">Read Chapter &rarr;</a>
+        </li>
+        <li class="chapter-access-item">
+          <div class="chapter-name">
+            <span class="chapter-tag">CH 03</span>
+            <span>Work, Energy &amp; Power (Potential Wells &amp; Stability)</span>
+          </div>
+          <a class="chapter-link" href="index.html#ch3" style="color: var(--accent-primary); font-size: 0.88rem; text-decoration: none; font-weight: 600;">Read Chapter &rarr;</a>
+        </li>
+        <li class="chapter-access-item">
+          <div class="chapter-name">
+            <span class="chapter-tag">CH 04</span>
+            <span>Center of Mass, Linear Momentum &amp; Collisions</span>
+          </div>
+          <a class="chapter-link" href="index.html#ch4" style="color: var(--accent-primary); font-size: 0.88rem; text-decoration: none; font-weight: 600;">Read Chapter &rarr;</a>
+        </li>
+        <li class="chapter-access-item">
+          <div class="chapter-name">
+            <span class="chapter-tag">CH 05</span>
+            <span>Rotational Mechanics, IAOR &amp; Toppling Dynamics</span>
+          </div>
+          <a class="chapter-link" href="index.html#ch5" style="color: var(--accent-primary); font-size: 0.88rem; text-decoration: none; font-weight: 600;">Read Chapter &rarr;</a>
+        </li>
+        <li class="chapter-access-item">
+          <div class="chapter-name">
+            <span class="chapter-tag">CH 06</span>
+            <span>Gravitation &amp; Oscillatory Motion (SHM Dynamics)</span>
+          </div>
+          <a class="chapter-link" href="index.html#ch6" style="color: var(--accent-primary); font-size: 0.88rem; text-decoration: none; font-weight: 600;">Read Chapter &rarr;</a>
+        </li>
+      </ul>
+
+      <div class="guarantee-note">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+        <div>
+          <strong>Offline Resilience &amp; Device Storage:</strong>
+          Because your browser stores this authorization key in local cache, you can read the handbook completely offline without needing an active internet connection. Use <code>Cmd + P</code> to export the full 50+ page volume to PDF anytime.
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="handbook-footer" style="margin-top: 4rem; text-align: center; padding: 2rem 1rem; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.85rem;">
+    <p>Classical Mechanics Master Handbook &copy; 2026. Published by sencor. Verified by Independent Automated Audits.</p>
+  </footer>
+
+  <script src="js/license.js"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const paymentId = params.get('payment_id') || params.get('pdt_id') || 'pay_' + Math.random().toString(36).substring(2, 10);
+      
+      // Generate deterministic valid license key
+      const key = window.JEE_LICENSE.generateKeyFromPaymentId(paymentId);
+      
+      // Persist in local storage
+      window.JEE_LICENSE.setUnlocked(key, paymentId);
+
+      // Render on screen
+      document.getElementById('license-key-text').innerText = key;
+      document.getElementById('ref-payment-id').innerText = paymentId;
+      document.getElementById('meta-payment-id').innerText = paymentId;
+
+      // Update CTA links to include access_key
+      const targetUrl = 'index.html?access_key=' + encodeURIComponent(key);
+      document.getElementById('primary-reader-btn').href = targetUrl;
+      document.getElementById('return-link').href = targetUrl;
+      document.querySelectorAll('.chapter-link').forEach(link => {
+        const hash = link.getAttribute('href').split('#')[1];
+        link.href = 'index.html?access_key=' + encodeURIComponent(key) + '#' + hash;
+      });
+
+      window.copyAccessKey = function () {
+        navigator.clipboard.writeText(key).then(() => {
+          const btnText = document.getElementById('copy-btn-text');
+          btnText.innerText = 'Copied!';
+          setTimeout(() => btnText.innerText = 'Copy Key', 2000);
+        }).catch(() => {
+          prompt('Copy your Access Key:', key);
+        });
+      };
+    })();
+  </script>
+</body>
+</html>

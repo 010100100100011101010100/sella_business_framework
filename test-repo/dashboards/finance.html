@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Dashboard — JEE Mechanics Vault</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="dash-header">
+    <div class="dash-title-group">
+      <h1>Finance & Cash Flow Instrument Panel</h1>
+      <div class="dash-subtitle">Governed by 30-dashboards/finance-dashboard.md</div>
+    </div>
+    <a href="index.html" class="dash-btn dash-btn-secondary" style="color: #fff; border-color: #555;">← All Dashboards</a>
+  </header>
+
+  <main class="dash-container">
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Received (30d)</div>
+        <div class="kpi-value" style="color: var(--cds-support-success);">$0.00</div>
+        <div class="kpi-sub">Pre-revenue launch phase</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Invoiced, Unpaid</div>
+        <div class="kpi-value">$0.00</div>
+        <div class="kpi-sub">0 outstanding invoices</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Gross Margin</div>
+        <div class="kpi-value">100.0%</div>
+        <div class="kpi-sub">Model anchor: <span class="kpi-anchor">95.0%</span> · 0 drift</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Burn Rate</div>
+        <div class="kpi-value">$0.00 / mo</div>
+        <div class="kpi-sub">Zero recurring overhead</div>
+      </div>
+    <div class="dash-panel" style="margin-bottom: 1.5rem; border-left: 4px solid var(--cds-support-success);">
+      <div class="panel-title">
+        <span>Active Merchant of Record & Payment Rail</span>
+        <span class="badge badge-success">LIVE · DODO PAYMENTS</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.9rem;">
+        <div>
+          <strong>Product:</strong> JEE Classical Mechanics Master Handbook &bull;
+          <strong>Product ID:</strong> <code>pdt_0NmvxZok2pcy8bHfo9P9z</code> &bull;
+          <strong>Price:</strong> $1.06 (~₹89) &bull;
+          <strong>Methods:</strong> UPI, Cards, Netbanking, Apple Pay
+        </div>
+        <a href="https://checkout.dodopayments.com/buy/pdt_0NmvxZok2pcy8bHfo9P9z?quantity=1" target="_blank" rel="noopener noreferrer" class="dash-btn" style="background: var(--cds-support-success); color: #000; font-weight: 600; text-decoration: none; padding: 0.4rem 0.9rem; border-radius: 4px;">
+          Test Live Checkout &rarr;
+        </a>
+      </div>
+    </div>
+
+    <div class="dash-panel" style="margin-bottom: 1.5rem;">
+      <div class="panel-title">
+        <span>Per-Delivery Margin Ledger (from deliveries.json)</span>
+      </div>
+      <table class="dash-table">
+        <thead>
+          <tr>
+            <th>Delivery ID</th>
+            <th>Client</th>
+            <th>Deliverable</th>
+            <th>Revenue</th>
+            <th>COGS</th>
+            <th>Margin</th>
+            <th>QA Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>d_0001</code></td>
+            <td>Beta Pilot Cohort</td>
+            <td>50-Page Master Handbook (Initial Generation)</td>
+            <td>$0.00</td>
+            <td>$0.00</td>
+            <td><span class="badge badge-success">100%</span></td>
+            <td><span class="badge badge-success">PASSED (cb084611)</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dash-panel">
+      <div class="panel-title">
+        <span>Planning Anchors vs. Measured Reality</span>
+      </div>
+      <table class="dash-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Planning Anchor</th>
+            <th>Measured Value</th>
+            <th>Variance / Drift</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Gross Margin</strong></td>
+            <td>95.0%</td>
+            <td>100.0%</td>
+            <td>+5.0%</td>
+            <td><span class="badge badge-success">HEALTHY</span></td>
+          </tr>
+          <tr>
+            <td><strong>COGS per Handbook</strong></td>
+            <td>$0.50</td>
+            <td>$0.00</td>
+            <td>-$0.50</td>
+            <td><span class="badge badge-success">OPTIMAL</span></td>
+          </tr>
+          <tr>
+            <td><strong>Customer Acquisition Cost</strong></td>
+            <td>$0.00 (Organic)</td>
+            <td>$0.00</td>
+            <td>$0.00</td>
+            <td><span class="badge badge-success">ZERO SPEND</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

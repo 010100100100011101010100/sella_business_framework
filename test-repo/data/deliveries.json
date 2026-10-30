@@ -1,0 +1,17 @@
+[
+  {
+    "id": "d_0001",
+    "client_id": "c_jee_pilot_01",
+    "kind": "handbook_full",
+    "units": 1,
+    "unit_label": "handbook_license",
+    "started_at": "2026-09-05T06:00:00Z",
+    "delivered_at": "2026-09-05T07:20:00Z",
+    "qa_gate": "independent_audit_116_checks",
+    "qa_passed": true,
+    "qa_passed_by": "auditor:cb084611",
+    "revenue_usd": 0.00,
+    "cogs_usd": 0.00,
+    "notes": "Initial Master Handbook Generation & 116-point Victory Audit"
+  }
+]

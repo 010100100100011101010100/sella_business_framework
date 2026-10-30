@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outreach Dashboard — JEE Mechanics Vault</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="dash-header">
+    <div class="dash-title-group">
+      <h1>Outreach & Pipeline Funnel</h1>
+      <div class="dash-subtitle">Governed by 30-dashboards/outreach-dashboard.md</div>
+    </div>
+    <a href="index.html" class="dash-btn dash-btn-secondary" style="color: #fff; border-color: #555;">← All Dashboards</a>
+  </header>
+
+  <main class="dash-container">
+    <div class="dash-panel" style="margin-bottom: 1.5rem;">
+      <div class="panel-title">
+        <span>Funnel Conversion & Evidence Rungs</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <div style="padding: 1rem; background: #f4f4f4; border-left: 3px solid #0f62fe;">
+          <div style="font-size: 0.75rem; color: var(--cds-text-secondary); text-transform: uppercase;">Sent</div>
+          <div style="font-size: 1.6rem; font-weight: 700; font-family: var(--font-mono);">3</div>
+          <div style="font-size: 0.75rem; color: var(--cds-text-helper);">Rung 1</div>
+        </div>
+        <div style="padding: 1rem; background: #f4f4f4; border-left: 3px solid #0f62fe;">
+          <div style="font-size: 0.75rem; color: var(--cds-text-secondary); text-transform: uppercase;">Delivered</div>
+          <div style="font-size: 1.6rem; font-weight: 700; font-family: var(--font-mono);">3 <span style="font-size: 0.85rem;">(100%)</span></div>
+          <div style="font-size: 0.75rem; color: var(--cds-text-helper);">0 bounces</div>
+        </div>
+        <div style="padding: 1rem; background: #f4f4f4; border-left: 3px solid #198038;">
+          <div style="font-size: 0.75rem; color: var(--cds-text-secondary); text-transform: uppercase;">Replied</div>
+          <div style="font-size: 1.6rem; font-weight: 700; font-family: var(--font-mono); color: var(--cds-support-success);">1 <span style="font-size: 0.85rem;">(33%)</span></div>
+          <div style="font-size: 0.75rem; color: var(--cds-text-helper);">Rung 4 (Interest)</div>
+        </div>
+        <div style="padding: 1rem; background: #f4f4f4; border-left: 3px solid #8d8d8d;">
+          <div style="font-size: 0.75rem; color: var(--cds-text-secondary); text-transform: uppercase;">Call / Chat</div>
+          <div style="font-size: 1.6rem; font-weight: 700; font-family: var(--font-mono);">0</div>
+          <div style="font-size: 0.75rem; color: var(--cds-text-helper);">Rung 5</div>
+        </div>
+        <div style="padding: 1rem; background: #f4f4f4; border-left: 3px solid #8d8d8d;">
+          <div style="font-size: 0.75rem; color: var(--cds-text-secondary); text-transform: uppercase;">Won</div>
+          <div style="font-size: 1.6rem; font-weight: 700; font-family: var(--font-mono);">0</div>
+          <div style="font-size: 0.75rem; color: var(--cds-text-helper);">Rung 8</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-panel">
+      <div class="panel-title">
+        <span>Prospect Tracking Table</span>
+      </div>
+      <table class="dash-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Target Group</th>
+            <th>Contact Name</th>
+            <th>Trigger Tier</th>
+            <th>Status</th>
+            <th>Verified Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>p_0001</code></td>
+            <td>Kota Apex Telegram Group</td>
+            <td>Aman Verma</td>
+            <td><span class="badge badge-success">TIER A</span></td>
+            <td><span class="badge badge-info">RESEARCHED</span></td>
+            <td><code>reddit.com/.../toppling_traps</code></td>
+          </tr>
+          <tr>
+            <td><code>p_0002</code></td>
+            <td>Resonance / Allen Tutors Network</td>
+            <td>Rajesh Sharma</td>
+            <td><span class="badge badge-success">TIER A</span></td>
+            <td><span class="badge badge-info">RESEARCHED</span></td>
+            <td><code>tutorconnect-jee.in</code></td>
+          </tr>
+          <tr>
+            <td><code>p_0003</code></td>
+            <td>r/JEENEETards Mechanics</td>
+            <td>Study Group Lead</td>
+            <td><span class="badge badge-warning">TIER B</span></td>
+            <td><span class="badge badge-info">RESEARCHED</span></td>
+            <td><code>reddit.com/r/JEENEETards</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

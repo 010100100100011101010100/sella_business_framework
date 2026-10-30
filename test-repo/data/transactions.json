@@ -1,0 +1,16 @@
+[
+  {
+    "id": "tx_0001",
+    "date": "2026-09-05",
+    "type": "one_off_cost",
+    "amount_usd": 0.00,
+    "client_id": null,
+    "delivery_id": null,
+    "method": "zero_capital_seed",
+    "received": true,
+    "received_at": "2026-09-05",
+    "category": "infrastructure",
+    "receipt_id": null,
+    "notes": "Starting capital: $0.00 constraint satisfied"
+  }
+]

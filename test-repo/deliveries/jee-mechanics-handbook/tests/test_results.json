@@ -1,0 +1,971 @@
+{
+  "timestamp": "2026-09-05T07:22:13Z",
+  "total_tests": 116,
+  "passed": 112,
+  "failed": 4,
+  "errors": 0,
+  "pass_rate_percent": 96.55,
+  "execution_time_seconds": 0.156,
+  "tiers": {
+    "tier_1": {
+      "title": "Tier 1: Core Feature Inventory & Functional Completeness (45 tests)",
+      "total": 45,
+      "passed": 45,
+      "failed": 0,
+      "records": [
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature1ReaderShell.test_f1_01_standalone_html5_structure",
+          "name": "test_f1_01_standalone_html5_structure",
+          "description": "Verify HTML5 DOCTYPE and standard root structure.",
+          "status": "PASS",
+          "duration": 0.00010800361633300781,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature1ReaderShell.test_f1_02_document_metadata_and_viewport",
+          "name": "test_f1_02_document_metadata_and_viewport",
+          "description": "Verify document title, description, and mobile viewport meta.",
+          "status": "PASS",
+          "duration": 0.0001468658447265625,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature1ReaderShell.test_f1_03_book_wrapper_container",
+          "name": "test_f1_03_book_wrapper_container",
+          "description": "Verify main flex/grid layout wrapper for book shell.",
+          "status": "PASS",
+          "duration": 0.00010204315185546875,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature1ReaderShell.test_f1_04_navigation_sidebar_present",
+          "name": "test_f1_04_navigation_sidebar_present",
+          "description": "Verify presence of sidebar navigation element with links.",
+          "status": "PASS",
+          "duration": 0.000698089599609375,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature1ReaderShell.test_f1_05_reading_progress_indicator",
+          "name": "test_f1_05_reading_progress_indicator",
+          "description": "Verify reading progress bar element is present in DOM.",
+          "status": "PASS",
+          "duration": 1.5974044799804688e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature2KaTeXMath.test_f2_01_katex_stylesheet_link",
+          "name": "test_f2_01_katex_stylesheet_link",
+          "description": "Verify KaTeX CSS stylesheet is linked.",
+          "status": "PASS",
+          "duration": 0.00010919570922851562,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature2KaTeXMath.test_f2_02_katex_core_js_script",
+          "name": "test_f2_02_katex_core_js_script",
+          "description": "Verify KaTeX core JS library script tag is present.",
+          "status": "PASS",
+          "duration": 0.0003457069396972656,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature2KaTeXMath.test_f2_03_katex_autorender_extension",
+          "name": "test_f2_03_katex_autorender_extension",
+          "description": "Verify KaTeX auto-render extension script is present.",
+          "status": "PASS",
+          "duration": 0.0021638870239257812,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature2KaTeXMath.test_f2_04_katex_delimiters_configured",
+          "name": "test_f2_04_katex_delimiters_configured",
+          "description": "Verify inline ($) and display ($$) math delimiters are configured.",
+          "status": "PASS",
+          "duration": 0.0005321502685546875,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature2KaTeXMath.test_f2_05_latex_math_notations_present",
+          "name": "test_f2_05_latex_math_notations_present",
+          "description": "Verify document contains extensive LaTeX mathematical typesetting.",
+          "status": "PASS",
+          "duration": 0.0005269050598144531,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature3PrintEngine.test_f3_01_print_media_block_exists",
+          "name": "test_f3_01_print_media_block_exists",
+          "description": "Verify @media print block exists in stylesheet.",
+          "status": "PASS",
+          "duration": 5.3882598876953125e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature3PrintEngine.test_f3_02_print_page_dimensions_defined",
+          "name": "test_f3_02_print_page_dimensions_defined",
+          "description": "Verify @page rule defines A4 paper size and margins.",
+          "status": "PASS",
+          "duration": 9.489059448242188e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature3PrintEngine.test_f3_03_chapter_page_break_rules",
+          "name": "test_f3_03_chapter_page_break_rules",
+          "description": "Verify chapters enforce forced page break before.",
+          "status": "PASS",
+          "duration": 0.00041985511779785156,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature3PrintEngine.test_f3_04_card_break_inside_avoidance",
+          "name": "test_f3_04_card_break_inside_avoidance",
+          "description": "Verify cards, formulas, and diagrams avoid page breaks inside.",
+          "status": "PASS",
+          "duration": 0.0004189014434814453,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature3PrintEngine.test_f3_05_navigation_suppressed_in_print",
+          "name": "test_f3_05_navigation_suppressed_in_print",
+          "description": "Verify sidebar navigation and progress bar are suppressed in print.",
+          "status": "PASS",
+          "duration": 0.0005099773406982422,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature4Chapter1Kinematics.test_f4_01_container_and_title",
+          "name": "test_f4_01_container_and_title",
+          "description": "Verify Chapter 1 container and title exist.",
+          "status": "PASS",
+          "duration": 1.2159347534179688e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature4Chapter1Kinematics.test_f4_02_formula_table_present",
+          "name": "test_f4_02_formula_table_present",
+          "description": "Verify Chapter 1 contains master formula summary table.",
+          "status": "PASS",
+          "duration": 7.867813110351562e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature4Chapter1Kinematics.test_f4_03_traps_count",
+          "name": "test_f4_03_traps_count",
+          "description": "Verify Chapter 1 contains >= 10 NTA trap alerts.",
+          "status": "PASS",
+          "duration": 7.867813110351562e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature4Chapter1Kinematics.test_f4_04_pyqs_count",
+          "name": "test_f4_04_pyqs_count",
+          "description": "Verify Chapter 1 contains >= 3 worked JEE Advanced PYQs.",
+          "status": "PASS",
+          "duration": 7.867813110351562e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature4Chapter1Kinematics.test_f4_05_challenges_and_svg_present",
+          "name": "test_f4_05_challenges_and_svg_present",
+          "description": "Verify Chapter 1 contains >= 5 challenge problems and inline SVG diagram.",
+          "status": "PASS",
+          "duration": 7.867813110351562e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature5Chapter2NewtonLaws.test_f5_01_container_and_title",
+          "name": "test_f5_01_container_and_title",
+          "description": "Verify Chapter 2 container and title exist.",
+          "status": "PASS",
+          "duration": 9.059906005859375e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature5Chapter2NewtonLaws.test_f5_02_formula_table_present",
+          "name": "test_f5_02_formula_table_present",
+          "description": "Verify Chapter 2 contains master formula summary table.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature5Chapter2NewtonLaws.test_f5_03_traps_count",
+          "name": "test_f5_03_traps_count",
+          "description": "Verify Chapter 2 contains >= 10 NTA trap alerts.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature5Chapter2NewtonLaws.test_f5_04_pyqs_count",
+          "name": "test_f5_04_pyqs_count",
+          "description": "Verify Chapter 2 contains >= 3 worked JEE Advanced PYQs.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature5Chapter2NewtonLaws.test_f5_05_challenges_and_svg_present",
+          "name": "test_f5_05_challenges_and_svg_present",
+          "description": "Verify Chapter 2 contains >= 5 challenge problems and inline SVG diagram.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature6Chapter3WorkEnergy.test_f6_01_container_and_title",
+          "name": "test_f6_01_container_and_title",
+          "description": "Verify Chapter 3 container and title exist.",
+          "status": "PASS",
+          "duration": 8.821487426757812e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature6Chapter3WorkEnergy.test_f6_02_formula_table_present",
+          "name": "test_f6_02_formula_table_present",
+          "description": "Verify Chapter 3 contains master formula summary table.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature6Chapter3WorkEnergy.test_f6_03_traps_count",
+          "name": "test_f6_03_traps_count",
+          "description": "Verify Chapter 3 contains >= 10 NTA trap alerts.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature6Chapter3WorkEnergy.test_f6_04_pyqs_count",
+          "name": "test_f6_04_pyqs_count",
+          "description": "Verify Chapter 3 contains >= 3 worked JEE Advanced PYQs.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature6Chapter3WorkEnergy.test_f6_05_challenges_and_svg_present",
+          "name": "test_f6_05_challenges_and_svg_present",
+          "description": "Verify Chapter 3 contains >= 5 challenge problems and inline SVG diagram.",
+          "status": "PASS",
+          "duration": 7.152557373046875e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature7Chapter4CenterOfMass.test_f7_01_container_and_title",
+          "name": "test_f7_01_container_and_title",
+          "description": "Verify Chapter 4 container and title exist.",
+          "status": "PASS",
+          "duration": 7.867813110351562e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature7Chapter4CenterOfMass.test_f7_02_formula_table_present",
+          "name": "test_f7_02_formula_table_present",
+          "description": "Verify Chapter 4 contains master formula summary table.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature7Chapter4CenterOfMass.test_f7_03_traps_count",
+          "name": "test_f7_03_traps_count",
+          "description": "Verify Chapter 4 contains >= 10 NTA trap alerts.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature7Chapter4CenterOfMass.test_f7_04_pyqs_count",
+          "name": "test_f7_04_pyqs_count",
+          "description": "Verify Chapter 4 contains >= 3 worked JEE Advanced PYQs.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature7Chapter4CenterOfMass.test_f7_05_challenges_and_svg_present",
+          "name": "test_f7_05_challenges_and_svg_present",
+          "description": "Verify Chapter 4 contains >= 5 challenge problems and inline SVG diagram.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature8Chapter5Rotation.test_f8_01_container_and_title",
+          "name": "test_f8_01_container_and_title",
+          "description": "Verify Chapter 5 container and title exist.",
+          "status": "PASS",
+          "duration": 7.867813110351562e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature8Chapter5Rotation.test_f8_02_formula_table_present",
+          "name": "test_f8_02_formula_table_present",
+          "description": "Verify Chapter 5 contains master formula summary table.",
+          "status": "PASS",
+          "duration": 7.152557373046875e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature8Chapter5Rotation.test_f8_03_traps_count",
+          "name": "test_f8_03_traps_count",
+          "description": "Verify Chapter 5 contains >= 10 NTA trap alerts.",
+          "status": "PASS",
+          "duration": 7.152557373046875e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature8Chapter5Rotation.test_f8_04_pyqs_count",
+          "name": "test_f8_04_pyqs_count",
+          "description": "Verify Chapter 5 contains >= 3 worked JEE Advanced PYQs.",
+          "status": "PASS",
+          "duration": 6.198883056640625e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature8Chapter5Rotation.test_f8_05_challenges_and_svg_present",
+          "name": "test_f8_05_challenges_and_svg_present",
+          "description": "Verify Chapter 5 contains >= 5 challenge problems and inline SVG diagram.",
+          "status": "PASS",
+          "duration": 7.152557373046875e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature9Chapter6GravitationSHM.test_f9_01_container_and_title",
+          "name": "test_f9_01_container_and_title",
+          "description": "Verify Chapter 6 container and title exist.",
+          "status": "PASS",
+          "duration": 9.059906005859375e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature9Chapter6GravitationSHM.test_f9_02_formula_table_present",
+          "name": "test_f9_02_formula_table_present",
+          "description": "Verify Chapter 6 contains master formula summary table.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature9Chapter6GravitationSHM.test_f9_03_traps_count",
+          "name": "test_f9_03_traps_count",
+          "description": "Verify Chapter 6 contains >= 10 NTA trap alerts.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature9Chapter6GravitationSHM.test_f9_04_pyqs_count",
+          "name": "test_f9_04_pyqs_count",
+          "description": "Verify Chapter 6 contains >= 3 worked JEE Advanced PYQs.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier1_features.TestTier1Feature9Chapter6GravitationSHM.test_f9_05_challenges_and_svg_present",
+          "name": "test_f9_05_challenges_and_svg_present",
+          "description": "Verify Chapter 6 contains >= 5 challenge problems and inline SVG diagram.",
+          "status": "PASS",
+          "duration": 6.9141387939453125e-06,
+          "error": null
+        }
+      ]
+    },
+    "tier_2": {
+      "title": "Tier 2: Boundary Value Analysis & Stress Thresholds (50 tests)",
+      "total": 50,
+      "passed": 47,
+      "failed": 3,
+      "records": [
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature1ShellBoundaries.test_t2_01_bg_paper_color_token",
+          "name": "test_t2_01_bg_paper_color_token",
+          "description": "Boundary: Base paper background must match exact warm cream hex #fcfaf2.",
+          "status": "PASS",
+          "duration": 0.000102996826171875,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature1ShellBoundaries.test_t2_02_bg_card_color_token",
+          "name": "test_t2_02_bg_card_color_token",
+          "description": "Boundary: Module card tint must match exact warm hex #f7f3e8.",
+          "status": "PASS",
+          "duration": 6.723403930664062e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature1ShellBoundaries.test_t2_03_border_color_token",
+          "name": "test_t2_03_border_color_token",
+          "description": "Boundary: Subtle border color must match exact warm border hex #e8dec8.",
+          "status": "PASS",
+          "duration": 8.96453857421875e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature1ShellBoundaries.test_t2_04_text_main_color_token",
+          "name": "test_t2_04_text_main_color_token",
+          "description": "Boundary: Main ink typography must match rich midnight ink hex #1e293b.",
+          "status": "PASS",
+          "duration": 7.867813110351562e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature1ShellBoundaries.test_t2_05_viewport_meta_settings",
+          "name": "test_t2_05_viewport_meta_settings",
+          "description": "Boundary: Viewport meta tag must enforce width=device-width and initial-scale=1.",
+          "status": "PASS",
+          "duration": 0.00010395050048828125,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature2KaTeXBoundaries.test_t2_06_display_math_delimiters_balanced",
+          "name": "test_t2_06_display_math_delimiters_balanced",
+          "description": "Boundary: Display math delimiters ($$) must have an even count.",
+          "status": "PASS",
+          "duration": 0.00046634674072265625,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature2KaTeXBoundaries.test_t2_07_inline_math_delimiters_balanced",
+          "name": "test_t2_07_inline_math_delimiters_balanced",
+          "description": "Boundary: Inline math delimiters ($) in text must be balanced.",
+          "status": "PASS",
+          "duration": 0.0013589859008789062,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature2KaTeXBoundaries.test_t2_08_no_empty_display_math",
+          "name": "test_t2_08_no_empty_display_math",
+          "description": "Boundary: No empty display math blocks ($$$$).",
+          "status": "PASS",
+          "duration": 0.0006668567657470703,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature2KaTeXBoundaries.test_t2_09_no_empty_inline_math",
+          "name": "test_t2_09_no_empty_inline_math",
+          "description": "Boundary: No empty inline math expressions ($$).",
+          "status": "PASS",
+          "duration": 0.0012121200561523438,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature2KaTeXBoundaries.test_t2_10_katex_throw_on_error_disabled",
+          "name": "test_t2_10_katex_throw_on_error_disabled",
+          "description": "Boundary: KaTeX config must set throwOnError: false to prevent render crashes.",
+          "status": "PASS",
+          "duration": 0.0025069713592529297,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature3PrintBoundaries.test_t2_11_print_counter_syntax",
+          "name": "test_t2_11_print_counter_syntax",
+          "description": "Boundary: Dynamic running page footer/header must use counter(page) syntax.",
+          "status": "PASS",
+          "duration": 6.318092346191406e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature3PrintBoundaries.test_t2_12_table_page_break_inside_avoid",
+          "name": "test_t2_12_table_page_break_inside_avoid",
+          "description": "Boundary: Formula tables must avoid page breaks inside.",
+          "status": "PASS",
+          "duration": 0.00018787384033203125,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature3PrintBoundaries.test_t2_13_diagram_page_break_inside_avoid",
+          "name": "test_t2_13_diagram_page_break_inside_avoid",
+          "description": "Boundary: Diagram containers must avoid page breaks inside.",
+          "status": "PASS",
+          "duration": 0.00012087821960449219,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature3PrintBoundaries.test_t2_14_print_font_size_units",
+          "name": "test_t2_14_print_font_size_units",
+          "description": "Boundary: Print stylesheet must define typography in print points (pt).",
+          "status": "PASS",
+          "duration": 0.00010395050048828125,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature3PrintBoundaries.test_t2_15_print_color_fidelity",
+          "name": "test_t2_15_print_color_fidelity",
+          "description": "Boundary: Print rules must set body background to white and text to black.",
+          "status": "PASS",
+          "duration": 0.0002238750457763672,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature4Chapter1Boundaries.test_t2_16_ch1_trap_numbering_continuity",
+          "name": "test_t2_16_ch1_trap_numbering_continuity",
+          "description": "test_t2_16_ch1_trap_numbering_continuity",
+          "status": "PASS",
+          "duration": 2.6941299438476562e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature4Chapter1Boundaries.test_t2_17_ch1_formula_validity_completeness",
+          "name": "test_t2_17_ch1_formula_validity_completeness",
+          "description": "test_t2_17_ch1_formula_validity_completeness",
+          "status": "PASS",
+          "duration": 0.00029397010803222656,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature4Chapter1Boundaries.test_t2_18_ch1_challenge_solutions_depth",
+          "name": "test_t2_18_ch1_challenge_solutions_depth",
+          "description": "test_t2_18_ch1_challenge_solutions_depth",
+          "status": "PASS",
+          "duration": 0.00019669532775878906,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature4Chapter1Boundaries.test_t2_19_ch1_zero_placeholders",
+          "name": "test_t2_19_ch1_zero_placeholders",
+          "description": "test_t2_19_ch1_zero_placeholders",
+          "status": "PASS",
+          "duration": 0.0022590160369873047,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature4Chapter1Boundaries.test_t2_20_ch1_word_count_boundary",
+          "name": "test_t2_20_ch1_word_count_boundary",
+          "description": "test_t2_20_ch1_word_count_boundary",
+          "status": "FAIL",
+          "duration": 0.0008091926574707031,
+          "error": "Traceback (most recent call last):\n  File \"/Users/shera/Desktop/business_framework/test-repo/deliveries/jee-mechanics-handbook/tests/test_tier2_boundaries.py\", line 225, in test_t2_20_ch1_word_count_boundary\n    _check_word_count(self, \"ch1\", 1)\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/Users/shera/Desktop/business_framework/test-repo/deliveries/jee-mechanics-handbook/tests/test_tier2_boundaries.py\", line 206, in _check_word_count\n    test_case.assertGreaterEqual(word_count, 3000,\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n                                 f\"Chapter {ch_num} must contain >= 3,000 words for 50-page book equivalent, found {word_count}.\")\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2842 not greater than or equal to 3000 : Chapter 1 must contain >= 3,000 words for 50-page book equivalent, found 2842.\n"
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature5Chapter2Boundaries.test_t2_21_ch2_trap_numbering_continuity",
+          "name": "test_t2_21_ch2_trap_numbering_continuity",
+          "description": "test_t2_21_ch2_trap_numbering_continuity",
+          "status": "PASS",
+          "duration": 2.7894973754882812e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature5Chapter2Boundaries.test_t2_22_ch2_formula_validity_completeness",
+          "name": "test_t2_22_ch2_formula_validity_completeness",
+          "description": "test_t2_22_ch2_formula_validity_completeness",
+          "status": "PASS",
+          "duration": 0.00014209747314453125,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature5Chapter2Boundaries.test_t2_23_ch2_challenge_solutions_depth",
+          "name": "test_t2_23_ch2_challenge_solutions_depth",
+          "description": "test_t2_23_ch2_challenge_solutions_depth",
+          "status": "PASS",
+          "duration": 0.00012612342834472656,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature5Chapter2Boundaries.test_t2_24_ch2_zero_placeholders",
+          "name": "test_t2_24_ch2_zero_placeholders",
+          "description": "test_t2_24_ch2_zero_placeholders",
+          "status": "PASS",
+          "duration": 0.0021157264709472656,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature5Chapter2Boundaries.test_t2_25_ch2_word_count_boundary",
+          "name": "test_t2_25_ch2_word_count_boundary",
+          "description": "test_t2_25_ch2_word_count_boundary",
+          "status": "PASS",
+          "duration": 8.821487426757812e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature6Chapter3Boundaries.test_t2_26_ch3_trap_numbering_continuity",
+          "name": "test_t2_26_ch3_trap_numbering_continuity",
+          "description": "test_t2_26_ch3_trap_numbering_continuity",
+          "status": "PASS",
+          "duration": 2.09808349609375e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature6Chapter3Boundaries.test_t2_27_ch3_formula_validity_completeness",
+          "name": "test_t2_27_ch3_formula_validity_completeness",
+          "description": "test_t2_27_ch3_formula_validity_completeness",
+          "status": "PASS",
+          "duration": 0.00013184547424316406,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature6Chapter3Boundaries.test_t2_28_ch3_challenge_solutions_depth",
+          "name": "test_t2_28_ch3_challenge_solutions_depth",
+          "description": "test_t2_28_ch3_challenge_solutions_depth",
+          "status": "PASS",
+          "duration": 0.00010395050048828125,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature6Chapter3Boundaries.test_t2_29_ch3_zero_placeholders",
+          "name": "test_t2_29_ch3_zero_placeholders",
+          "description": "test_t2_29_ch3_zero_placeholders",
+          "status": "PASS",
+          "duration": 0.001997709274291992,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature6Chapter3Boundaries.test_t2_30_ch3_word_count_boundary",
+          "name": "test_t2_30_ch3_word_count_boundary",
+          "description": "test_t2_30_ch3_word_count_boundary",
+          "status": "FAIL",
+          "duration": 0.00030684471130371094,
+          "error": "Traceback (most recent call last):\n  File \"/Users/shera/Desktop/business_framework/test-repo/deliveries/jee-mechanics-handbook/tests/test_tier2_boundaries.py\", line 261, in test_t2_30_ch3_word_count_boundary\n    _check_word_count(self, \"ch3\", 3)\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/Users/shera/Desktop/business_framework/test-repo/deliveries/jee-mechanics-handbook/tests/test_tier2_boundaries.py\", line 206, in _check_word_count\n    test_case.assertGreaterEqual(word_count, 3000,\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n                                 f\"Chapter {ch_num} must contain >= 3,000 words for 50-page book equivalent, found {word_count}.\")\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2765 not greater than or equal to 3000 : Chapter 3 must contain >= 3,000 words for 50-page book equivalent, found 2765.\n"
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature7Chapter4Boundaries.test_t2_31_ch4_trap_numbering_continuity",
+          "name": "test_t2_31_ch4_trap_numbering_continuity",
+          "description": "test_t2_31_ch4_trap_numbering_continuity",
+          "status": "PASS",
+          "duration": 2.5033950805664062e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature7Chapter4Boundaries.test_t2_32_ch4_formula_validity_completeness",
+          "name": "test_t2_32_ch4_formula_validity_completeness",
+          "description": "test_t2_32_ch4_formula_validity_completeness",
+          "status": "PASS",
+          "duration": 0.0001499652862548828,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature7Chapter4Boundaries.test_t2_33_ch4_challenge_solutions_depth",
+          "name": "test_t2_33_ch4_challenge_solutions_depth",
+          "description": "test_t2_33_ch4_challenge_solutions_depth",
+          "status": "PASS",
+          "duration": 0.00014495849609375,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature7Chapter4Boundaries.test_t2_34_ch4_zero_placeholders",
+          "name": "test_t2_34_ch4_zero_placeholders",
+          "description": "test_t2_34_ch4_zero_placeholders",
+          "status": "PASS",
+          "duration": 0.0026421546936035156,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature7Chapter4Boundaries.test_t2_35_ch4_word_count_boundary",
+          "name": "test_t2_35_ch4_word_count_boundary",
+          "description": "test_t2_35_ch4_word_count_boundary",
+          "status": "PASS",
+          "duration": 9.059906005859375e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature8Chapter5Boundaries.test_t2_36_ch5_trap_numbering_continuity",
+          "name": "test_t2_36_ch5_trap_numbering_continuity",
+          "description": "test_t2_36_ch5_trap_numbering_continuity",
+          "status": "PASS",
+          "duration": 1.9073486328125e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature8Chapter5Boundaries.test_t2_37_ch5_formula_validity_completeness",
+          "name": "test_t2_37_ch5_formula_validity_completeness",
+          "description": "test_t2_37_ch5_formula_validity_completeness",
+          "status": "PASS",
+          "duration": 0.00013709068298339844,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature8Chapter5Boundaries.test_t2_38_ch5_challenge_solutions_depth",
+          "name": "test_t2_38_ch5_challenge_solutions_depth",
+          "description": "test_t2_38_ch5_challenge_solutions_depth",
+          "status": "PASS",
+          "duration": 0.00014734268188476562,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature8Chapter5Boundaries.test_t2_39_ch5_zero_placeholders",
+          "name": "test_t2_39_ch5_zero_placeholders",
+          "description": "test_t2_39_ch5_zero_placeholders",
+          "status": "PASS",
+          "duration": 0.002792835235595703,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature8Chapter5Boundaries.test_t2_40_ch5_word_count_boundary",
+          "name": "test_t2_40_ch5_word_count_boundary",
+          "description": "test_t2_40_ch5_word_count_boundary",
+          "status": "PASS",
+          "duration": 7.867813110351562e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature9Chapter6Boundaries.test_t2_41_ch6_trap_numbering_continuity",
+          "name": "test_t2_41_ch6_trap_numbering_continuity",
+          "description": "test_t2_41_ch6_trap_numbering_continuity",
+          "status": "PASS",
+          "duration": 1.8835067749023438e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature9Chapter6Boundaries.test_t2_42_ch6_formula_validity_completeness",
+          "name": "test_t2_42_ch6_formula_validity_completeness",
+          "description": "test_t2_42_ch6_formula_validity_completeness",
+          "status": "PASS",
+          "duration": 0.00013399124145507812,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature9Chapter6Boundaries.test_t2_43_ch6_challenge_solutions_depth",
+          "name": "test_t2_43_ch6_challenge_solutions_depth",
+          "description": "test_t2_43_ch6_challenge_solutions_depth",
+          "status": "PASS",
+          "duration": 0.0001220703125,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature9Chapter6Boundaries.test_t2_44_ch6_zero_placeholders",
+          "name": "test_t2_44_ch6_zero_placeholders",
+          "description": "test_t2_44_ch6_zero_placeholders",
+          "status": "PASS",
+          "duration": 0.002357006072998047,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2Feature9Chapter6Boundaries.test_t2_45_ch6_word_count_boundary",
+          "name": "test_t2_45_ch6_word_count_boundary",
+          "description": "test_t2_45_ch6_word_count_boundary",
+          "status": "PASS",
+          "duration": 8.106231689453125e-06,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2GlobalVolumeBoundaries.test_t2_46_total_word_count_50_page_equivalent",
+          "name": "test_t2_46_total_word_count_50_page_equivalent",
+          "description": "Boundary: Total handbook text must reach >= 50-page equivalent (>25,000 words).",
+          "status": "FAIL",
+          "duration": 0.0026857852935791016,
+          "error": "Traceback (most recent call last):\n  File \"/Users/shera/Desktop/business_framework/test-repo/deliveries/jee-mechanics-handbook/tests/test_tier2_boundaries.py\", line 328, in test_t2_46_total_word_count_50_page_equivalent\n    self.assertGreater(count, 25000,\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n                       f\"Handbook must contain > 25,000 words for a 50-page publication equivalent, found {count}.\")\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 21335 not greater than 25000 : Handbook must contain > 25,000 words for a 50-page publication equivalent, found 21335.\n"
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2GlobalVolumeBoundaries.test_t2_47_document_wide_zero_placeholders",
+          "name": "test_t2_47_document_wide_zero_placeholders",
+          "description": "Boundary: Document must have zero placeholder or stub patterns globally.",
+          "status": "PASS",
+          "duration": 0.015401840209960938,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2GlobalVolumeBoundaries.test_t2_48_total_traps_exact_volume",
+          "name": "test_t2_48_total_traps_exact_volume",
+          "description": "Boundary: Total number of cataloged NTA traps across all chapters must be exactly 60.",
+          "status": "PASS",
+          "duration": 1.5974044799804688e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2GlobalVolumeBoundaries.test_t2_49_total_pyqs_exact_volume",
+          "name": "test_t2_49_total_pyqs_exact_volume",
+          "description": "Boundary: Total worked JEE Advanced PYQs across all chapters must be exactly 18.",
+          "status": "PASS",
+          "duration": 1.0967254638671875e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier2_boundaries.TestTier2GlobalVolumeBoundaries.test_t2_50_total_challenges_exact_volume",
+          "name": "test_t2_50_total_challenges_exact_volume",
+          "description": "Boundary: Total practice challenge problems across all chapters must be exactly 30.",
+          "status": "PASS",
+          "duration": 8.344650268554688e-06,
+          "error": null
+        }
+      ]
+    },
+    "tier_3": {
+      "title": "Tier 3: Cross-Feature Interactions & Pairwise Combinations (16 tests)",
+      "total": 16,
+      "passed": 16,
+      "failed": 0,
+      "records": [
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_01_sidebar_navigation_anchors_resolve_to_dom_ids",
+          "name": "test_t3_01_sidebar_navigation_anchors_resolve_to_dom_ids",
+          "description": "Cross 1: Every sidebar navigation link must resolve to a valid DOM element ID.",
+          "status": "PASS",
+          "duration": 0.00013399124145507812,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_02_trap_index_anchors_resolve_to_chapters",
+          "name": "test_t3_02_trap_index_anchors_resolve_to_chapters",
+          "description": "Cross 2: NTA Trap Index anchors must resolve to valid chapter/section targets.",
+          "status": "PASS",
+          "duration": 0.00038886070251464844,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_03_pyq_index_anchors_resolve_to_chapters",
+          "name": "test_t3_03_pyq_index_anchors_resolve_to_chapters",
+          "description": "Cross 3: Solved PYQ Index anchors must resolve to valid DOM targets.",
+          "status": "PASS",
+          "duration": 0.0003070831298828125,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_04_toc_curriculum_blueprint_anchors_resolve",
+          "name": "test_t3_04_toc_curriculum_blueprint_anchors_resolve",
+          "description": "Cross 4: Detailed Table of Contents anchors must resolve to valid DOM targets.",
+          "status": "PASS",
+          "duration": 0.00015616416931152344,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_05_footer_navigation_anchors_resolve",
+          "name": "test_t3_05_footer_navigation_anchors_resolve",
+          "description": "Cross 5: Book footer quick-navigation links must resolve to valid DOM IDs.",
+          "status": "PASS",
+          "duration": 0.0002579689025878906,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_06_katex_physics_macros_defined",
+          "name": "test_t3_06_katex_physics_macros_defined",
+          "description": "Cross 6: Specialized physics macros must be configured in KaTeX setup.",
+          "status": "PASS",
+          "duration": 0.0017440319061279297,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_07_formula_tables_integrate_latex_math",
+          "name": "test_t3_07_formula_tables_integrate_latex_math",
+          "description": "Cross 7: Formula tables in all 6 chapters must contain typeset LaTeX equations.",
+          "status": "PASS",
+          "duration": 0.0002601146697998047,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_08_trap_alert_cards_integrate_latex_math",
+          "name": "test_t3_08_trap_alert_cards_integrate_latex_math",
+          "description": "Cross 8: NTA Trap Alert cards in all 6 chapters must contain LaTeX mathematical expressions.",
+          "status": "PASS",
+          "duration": 1.8835067749023438e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_09_pyq_step_solutions_integrate_latex_math",
+          "name": "test_t3_09_pyq_step_solutions_integrate_latex_math",
+          "description": "Cross 9: Worked JEE Advanced PYQ solutions must contain multi-step LaTeX mathematical derivations.",
+          "status": "PASS",
+          "duration": 1.8835067749023438e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_10_challenge_solutions_integrate_latex_math",
+          "name": "test_t3_10_challenge_solutions_integrate_latex_math",
+          "description": "Cross 10: Practice challenge problem solutions must contain LaTeX mathematical solutions.",
+          "status": "PASS",
+          "duration": 1.71661376953125e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_11_css_card_classes_correspond_to_theme_tokens",
+          "name": "test_t3_11_css_card_classes_correspond_to_theme_tokens",
+          "description": "Cross 11: Classes (.trap-card, .tip-card, .pyq-box, .challenge-box) must be defined in CSS.",
+          "status": "PASS",
+          "duration": 0.00015616416931152344,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_12_css_print_page_break_applies_to_chapters",
+          "name": "test_t3_12_css_print_page_break_applies_to_chapters",
+          "description": "Cross 12: Print CSS rules must enforce forced page breaks on chapter containers or titles.",
+          "status": "PASS",
+          "duration": 0.0002942085266113281,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_13_challenge_details_expanded_in_print_mode",
+          "name": "test_t3_13_challenge_details_expanded_in_print_mode",
+          "description": "Cross 13: Print CSS must override challenge solutions visibility so printed books show full solutions.",
+          "status": "PASS",
+          "duration": 0.0001220703125,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_14_inline_svgs_wrapped_in_diagram_containers_with_captions",
+          "name": "test_t3_14_inline_svgs_wrapped_in_diagram_containers_with_captions",
+          "description": "Cross 14: All 6 chapters must enclose their SVG diagrams in a container with a descriptive caption.",
+          "status": "PASS",
+          "duration": 4.1961669921875e-05,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_15_svg_marker_references_resolve_to_defs",
+          "name": "test_t3_15_svg_marker_references_resolve_to_defs",
+          "description": "Cross 15: All marker-end/marker-start url(#id) references in SVGs must resolve to <marker id=...> in defs.",
+          "status": "PASS",
+          "duration": 0.0004749298095703125,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier3_cross_features.TestTier3CrossFeatures.test_t3_16_strategic_tip_cards_present_in_all_chapters",
+          "name": "test_t3_16_strategic_tip_cards_present_in_all_chapters",
+          "description": "Cross 16: Every chapter must lead with an executive strategic weightage and focus callout card.",
+          "status": "PASS",
+          "duration": 1.3828277587890625e-05,
+          "error": null
+        }
+      ]
+    },
+    "tier_4": {
+      "title": "Tier 4: Real-World Application & Workload Scenarios (5 scenarios)",
+      "total": 5,
+      "passed": 4,
+      "failed": 1,
+      "records": [
+        {
+          "id": "tests.test_tier4_real_world.TestTier4RealWorldScenarios.test_scenario_1_student_offline_browser_session",
+          "name": "test_scenario_1_student_offline_browser_session",
+          "description": "Scenario 1: Student opens standalone HTML offline via file:/// without local web server.",
+          "status": "PASS",
+          "duration": 0.0013649463653564453,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier4_real_world.TestTier4RealWorldScenarios.test_scenario_2_teacher_headless_print_pdf_export",
+          "name": "test_scenario_2_teacher_headless_print_pdf_export",
+          "description": "Scenario 2: Teacher prints or exports 50-page PDF handbook (Cmd + P or headless Chromium).",
+          "status": "PASS",
+          "duration": 0.0018868446350097656,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier4_real_world.TestTier4RealWorldScenarios.test_scenario_3_jee_aspirant_trap_and_formula_quick_review",
+          "name": "test_scenario_3_jee_aspirant_trap_and_formula_quick_review",
+          "description": "Scenario 3: JEE Aspirant performs rapid formula & negative-marking trap revision.",
+          "status": "PASS",
+          "duration": 0.00017881393432617188,
+          "error": null
+        },
+        {
+          "id": "tests.test_tier4_real_world.TestTier4RealWorldScenarios.test_scenario_4_deep_dive_pyq_and_challenge_self_study",
+          "name": "test_scenario_4_deep_dive_pyq_and_challenge_self_study",
+          "description": "Scenario 4: Student solves PYQs and Olympiad challenges with expandable solutions and vector diagrams.",
+          "status": "FAIL",
+          "duration": 0.00384521484375,
+          "error": "Traceback (most recent call last):\n  File \"/Users/shera/Desktop/business_framework/test-repo/deliveries/jee-mechanics-handbook/tests/test_tier4_real_world.py\", line 193, in test_scenario_4_deep_dive_pyq_and_challenge_self_study\n    self.assertEqual(len(xml_errors), 0,\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n                     f\"Inline SVG diagrams contain invalid XML syntax: {xml_errors}\")\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 0 : Inline SVG diagrams contain invalid XML syntax: ['SVG 3: not well-formed (invalid token): line 13, column 120']\n"
+        },
+        {
+          "id": "tests.test_tier4_real_world.TestTier4RealWorldScenarios.test_scenario_5_mobile_device_responsive_reading",
+          "name": "test_scenario_5_mobile_device_responsive_reading",
+          "description": "Scenario 5: Aspirant reads handbook on mobile/tablet smartphone screen.",
+          "status": "PASS",
+          "duration": 0.00026607513427734375,
+          "error": null
+        }
+      ]
+    }
+  }
+}

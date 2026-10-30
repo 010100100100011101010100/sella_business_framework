@@ -1,0 +1,14 @@
+[
+  {
+    "id": "t_0001",
+    "prospect_id": "p_0001",
+    "sequence_id": "seq_sample_drop_01",
+    "step": 1,
+    "channel": "public_work",
+    "sent_at": "2026-09-05T08:00:00Z",
+    "subject": "Free Release: 50-Page Classical Mechanics Trap Matrix & Formula Sheets",
+    "outcome": "sent",
+    "outcome_at": "2026-09-05T08:05:00Z",
+    "sentiment": "positive"
+  }
+]

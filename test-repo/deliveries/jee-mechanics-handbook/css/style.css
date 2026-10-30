@@ -1,0 +1,68 @@
+/* Forwarding alias to master unified styles.css */
+@import url('../styles.css');
+
+/* Ensure legacy token compatibility */
+:root {
+  --bg-paper: #fcfaf2;
+  --bg-card: #f7f3e8;
+  --border-color: #e8dec8;
+  --border-subtle: #e8dec8;
+  --text-main: #1e293b;
+  --ink-primary: #1e293b;
+}
+
+body.handbook-body {
+  background-color: var(--bg-paper);
+  color: var(--text-main);
+  font-family: var(--font-body);
+}
+
+.trap-card {
+  background-color: var(--trap-bg);
+  border-left: 2.5px solid var(--trap-border);
+}
+
+.tip-card {
+  background-color: var(--tip-bg);
+  border-left: 2.5px solid var(--tip-border);
+}
+
+.pyq-box {
+  background-color: var(--pyq-bg);
+  border: 1px solid var(--pyq-border);
+}
+
+.challenge-box {
+  background-color: var(--challenge-bg);
+  border: 1px solid var(--challenge-border);
+}
+
+.formula-table {
+  border-collapse: collapse;
+}
+
+@media print {
+  body.handbook-body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10.5pt !important;
+  }
+  @page {
+    size: A4;
+    margin: 18mm 15mm;
+  }
+  .chapter-container, .chapter, h1.chapter-title {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+  .formula-table, .diagram-container, .card-box {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  .book-sidebar, #progress-bar, #reading-progress-bar {
+    display: none !important;
+  }
+  .challenge-solution, .challenge-details {
+    display: block !important;
+  }
+}
